@@ -1,2 +1,11 @@
 # DesignPatterns
-Java23种设计模式
+
+
+构建mvn项目：
+
+```powershell
+mvn archetype:generate -DgroupId=com.xupengboo -DartifactId=xxx -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+```
+
+
+
