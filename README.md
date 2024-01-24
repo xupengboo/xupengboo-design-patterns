@@ -45,9 +45,8 @@ mvn archetype:generate -DgroupId=com.xupengboo -DartifactId=xxx -DarchetypeArtif
 10. 中介者模式（Mediator Pattern）
 11. 解释器模式（Interpreter Pattern）
 
-
-
 # 1. 工厂模式(factory-pattern)
 
 工厂模式包括 **简单工厂模式、工厂方法模式和抽象工厂模式** 。这三种模式都属于工厂模式的范畴。
+
 
