@@ -111,11 +111,9 @@ mvn archetype:generate -DgroupId=com.xupengboo -DartifactId=xxx -DarchetypeArtif
 
 - 指导者（Director）： 负责调用具体建造者来构建产品对象，通常包含构建的具体步骤。
 
-
-
-|                          建造者模式                          |                             概述                             |
-| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| 建造者模式                                                   | 概述                                                         |
+| :----------------------------------------------------------- | :----------------------------------------------------------- |
 | [标准建造者模式](https://github.com/xupengboo/DesignPatterns/tree/main/3.%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/src/main/java/com/xupengboo/%E6%A0%87%E5%87%86%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F) | 将一个复杂对象（产品）的构建过程与其表示分离，使得同样的构建过程可以创建不同的表示 |
 | [可配置的建造者模式](https://github.com/xupengboo/DesignPatterns/tree/main/3.%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/src/main/java/com/xupengboo/%E5%8F%AF%E9%85%8D%E7%BD%AE%E7%9A%84%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F) | 允许客户端在构建产品时进行更灵活的配置，通过提供一系列的配置方法来实现。 |
-| [链式调用的建造者模式](https://github.com/xupengboo/DesignPatterns/tree/main/3.%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/src/main/java/com/xupengboo/%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8%E7%9A%84%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F) |           通过 `return this` 实现的链式调用效果。            |
+| [链式调用的建造者模式](https://github.com/xupengboo/DesignPatterns/tree/main/3.%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/src/main/java/com/xupengboo/%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8%E7%9A%84%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F) | 通过 `return this` 实现的链式调用效果。                      |
 
