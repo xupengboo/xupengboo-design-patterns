@@ -8,7 +8,7 @@ import com.xupengboo.抽象工厂模式.shape.Shape;
 /**
  * @author: xupengboo
  * @date: 2024/1/24 14:22
- * @description:
+ * @description: 客户端代码
  */
 public class App {
 

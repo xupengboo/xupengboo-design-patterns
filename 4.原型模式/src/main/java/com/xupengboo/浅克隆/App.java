@@ -1,8 +1,9 @@
 package com.xupengboo.浅克隆;
 
 /**
- * Hello world!
- *
+ * @author: xupengboo
+ * @date: 2024/1/25 16:12
+ * @description: 客户端代码
  */
 public class App {
 

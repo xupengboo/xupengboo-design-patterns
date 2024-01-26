@@ -5,7 +5,7 @@ import java.io.IOException;
 /**
  * @author: xupengboo
  * @date: 2024/1/25 16:12
- * @description:
+ * @description: 客户端代码
  */
 public class App {
 

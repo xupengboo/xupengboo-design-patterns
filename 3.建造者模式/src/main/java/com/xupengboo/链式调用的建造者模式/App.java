@@ -6,7 +6,7 @@ import com.xupengboo.链式调用的建造者模式.builder.ComputerBuilder;
 /**
  * @author: xupengboo
  * @date: 2024/1/25 13:58
- * @description:
+ * @description: 客户端代码
  */
 public class App {
 

@@ -4,7 +4,9 @@ import com.xupengboo.简单工厂模式.shape.Shape;
 import com.xupengboo.简单工厂模式.shape.ShapeFactory;
 
 /**
- * Hello world!
+ * @author: xupengboo
+ * @date: 2024/1/25 16:12
+ * @description: 客户端代码
  */
 public class App {
 

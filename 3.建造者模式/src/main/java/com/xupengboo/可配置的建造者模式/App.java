@@ -5,7 +5,7 @@ import com.xupengboo.可配置的建造者模式.builder.*;
 /**
  * @author: xupengboo
  * @date: 2024/1/25 13:36
- * @description:
+ * @description: 客户端代码
  */
 public class App {
 

@@ -6,7 +6,9 @@ import com.xupengboo.标准建造者模式.builder.VegMealBuilder;
 import com.xupengboo.标准建造者模式.builder.Waiter;
 
 /**
- * 客户端代码
+ * @author: xupengboo
+ * @date: 2024/1/25 16:12
+ * @description: 客户端代码
  */
 public class App {
 

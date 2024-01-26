@@ -85,13 +85,11 @@ mvn archetype:generate -DgroupId=com.xupengboo -DartifactId=xxx -DarchetypeArtif
 
 | 序号 | 单例模式                                                     | 概述                                                         |
 | :--: | ------------------------------------------------------------ | ------------------------------------------------------------ |
-|  1   | [懒汉式](https://github.com/xupengboo/DesignPatterns/tree/main/2.%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/src/main/java/com/xupengboo/%E6%87%92%E6%B1%89%E5%BC%8F) | [线程安全，效率低](https://github.com/xupengboo/DesignPatterns/blob/main/2.%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/src/main/java/com/xupengboo/%E6%87%92%E6%B1%89%E5%BC%8F/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8/Singleton.java)、[线程不安全](https://github.com/xupengboo/DesignPatterns/blob/main/2.%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/src/main/java/com/xupengboo/%E6%87%92%E6%B1%89%E5%BC%8F/%E7%BA%BF%E7%A8%8B%E4%B8%8D%E5%AE%89%E5%85%A8/Singleton.java) |
+|  1   | [懒汉式](https://github.com/xupengboo/DesignPatterns/tree/main/2.%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/src/main/java/com/xupengboo/%E6%87%92%E6%B1%89%E5%BC%8F) | [线程安全，效率低](https://github.com/xupengboo/DesignPatterns/blob/main/2.%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/src/main/java/com/xupengboo/%E6%87%92%E6%B1%89%E5%BC%8F/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8/Singleton.java) 、 [线程不安全](https://github.com/xupengboo/DesignPatterns/blob/main/2.%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/src/main/java/com/xupengboo/%E6%87%92%E6%B1%89%E5%BC%8F/%E7%BA%BF%E7%A8%8B%E4%B8%8D%E5%AE%89%E5%85%A8/Singleton.java) |
 |  2   | [饿汉式](https://github.com/xupengboo/DesignPatterns/blob/main/2.%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/src/main/java/com/xupengboo/%E9%A5%BF%E6%B1%89%E5%BC%8F/Singleton.java) | 天然线程安全，但不符合懒加载                                 |
 |  3   | [双检锁/双重校验锁](https://github.com/xupengboo/DesignPatterns/blob/main/2.%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/src/main/java/com/xupengboo/%E5%8F%8C%E6%A3%80%E9%94%81/Singleton.java) | 线程安全、符合懒加载、效率高，性能强于1，2                   |
 |  4   | [静态内部类](https://github.com/xupengboo/DesignPatterns/blob/main/2.%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/src/main/java/com/xupengboo/%E9%9D%99%E6%80%81%E5%86%85%E9%83%A8%E7%B1%BB/Singleton.java) | 利用静态类实现，性能强于3                                    |
 |  5   | [枚举方式](https://github.com/xupengboo/DesignPatterns/blob/main/2.%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/src/main/java/com/xupengboo/%E6%9E%9A%E4%B8%BE/Singleton.java) | 目前，最佳方式                                               |
-
-
 
 # 3. 建造者模式
 
@@ -103,7 +101,7 @@ mvn archetype:generate -DgroupId=com.xupengboo -DartifactId=xxx -DarchetypeArtif
 
 > 🔍Tips：可以配合 [菜鸟教程 - 建造者模式](https://www.runoob.com/design-pattern/builder-pattern.html) 来进行学习。
 
-建造者模式通常包含以下几个核心角色：
+**建造者模式通常包含以下几个核心角色**：
 
 - 产品类（Product）：表示被构建的复杂对象。通常包含多个部分，这些部分的具体组成可以灵活变化。
 
@@ -119,6 +117,8 @@ mvn archetype:generate -DgroupId=com.xupengboo -DartifactId=xxx -DarchetypeArtif
 | [可配置的建造者模式](https://github.com/xupengboo/DesignPatterns/tree/main/3.%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/src/main/java/com/xupengboo/%E5%8F%AF%E9%85%8D%E7%BD%AE%E7%9A%84%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F) | 允许客户端在构建产品时进行更灵活的配置，通过提供一系列的配置方法来实现。 |
 | [链式调用的建造者模式](https://github.com/xupengboo/DesignPatterns/tree/main/3.%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/src/main/java/com/xupengboo/%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8%E7%9A%84%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F) | 通过 `return this` 实现的链式调用效果。                      |
 
+> 🔍Tips：**建造者模式与工厂模式的区别是：建造者模式更加关注与零件装配的顺序。**
+
 # 4. 原型模式
 
 官方定义：原型模式（prototype-pattern）是一种创建型设计模式，其主要目的是通过复制现有对象来创建新的对象，而不是通过实例化来创建。**原型模式适用于需要创建多个相似对象，但又不想通过耗费大量时间和资源的实例化过程来创建这些对象的情况。**
@@ -130,8 +130,6 @@ mvn archetype:generate -DgroupId=com.xupengboo -DartifactId=xxx -DarchetypeArtif
 
 [^1]: 在浅克隆中，只复制对象本身和其基本数据类型的字段。对于对象内部的引用类型字段，仍然使用原始对象内部的引用。这意味着原始对象和克隆对象共享相同的引用类型字段，对其中一个对象进行修改可能会影响到另一个对象。在Java中，可以通过实现`Cloneable`接口并覆写`clone`方法来实现浅克隆。默认的`clone`方法是浅克隆的。
 [^2]: 在深克隆中，不仅复制对象本身和其基本数据类型的字段，还会递归地复制对象内部的引用类型字段。这意味着原始对象和克隆对象的引用类型字段是相互独立的，对其中一个对象进行修改不会影响到另一个对象。深克隆通常需要使用序列化和反序列化、手动递归复制对象等方式来确保所有的引用类型字段都被正确复制。
-
-
 
 原型模式核心就是 **克隆操作**。
 
@@ -163,8 +161,27 @@ class MyClass {
 
 - 使用第三方库
 
-| 原型模式         | 概述                                                         |
-| ---------------- | ------------------------------------------------------------ |
-| 浅克隆（浅拷贝） | 实现Cloneable接口，重写Clone方法。                           |
-| 深克隆（深拷贝） | 实现Serializable接口，将对象序列化为字节流，再进而将字节流反序列化为对象。 |
+| 原型模式                                                     | 概述                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [浅克隆（浅拷贝）](https://github.com/xupengboo/DesignPatterns/tree/main/4.%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F/src/main/java/com/xupengboo/%E6%B5%85%E5%85%8B%E9%9A%86) | 实现Cloneable接口，重写Clone方法。                           |
+| [深克隆（深拷贝）](https://github.com/xupengboo/DesignPatterns/tree/main/4.%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F/src/main/java/com/xupengboo/%E6%B7%B1%E5%85%8B%E9%9A%86) | 实现Serializable接口，将对象序列化为字节流，再进而将字节流反序列化为对象。 |
+
+# 5. 适配器模式
+
+官方定义：适配器模式（Adapter Pattern）是作为两个不兼容的接口之间的桥梁。这种类型的设计模式属于结构型模式，它结合了两个独立接口的功能。
+
+关键信息：**通过将一个类的接口转换成客户端期望的接口，使得原本由于接口不匹配而无法协同工作的类能够协同工作。适配器充当一个中间层，解决了不同接口之间的兼容性问题。**
+
+适配器模式通常有两种实现方式：**类适配器模式 和 对象适配器模式**。
+
+**适配器模式主要包含以下几个角色**：
+
+1. 目标接口（Target）： 定义客户端代码期望的接口，是客户端通过适配器调用的接口。
+2. 适配器（Adapter）： 实现目标接口，并持有一个需要被适配的对象，负责把目标接口适配为被适配者接口。
+3. 被适配者（Adaptee）： 拥有一个不符合目标接口的接口，是需要被适配的类。
+
+| 适配器模式     | 概述                                                         |
+| -------------- | ------------------------------------------------------------ |
+| 类适配器模式   | 通过继承被适配者类来实现适配器。适配器类既继承了目标接口，又持有了被适配者类的实例。 |
+| 对象适配器模式 | 通过组合被适配者类的实例来实现适配器。适配器类持有被适配者类的实例，并实现了目标接口。 |
 
