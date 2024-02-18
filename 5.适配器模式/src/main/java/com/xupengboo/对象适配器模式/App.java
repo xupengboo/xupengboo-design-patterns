@@ -7,6 +7,7 @@ import com.xupengboo.对象适配器模式.oldLogger.OldLogger;
  * @date: 2024/1/25 16:12
  * @description: 客户端代码
  */
+// 过滤器链
 public class App {
 
     public static void main( String[] args ) {
