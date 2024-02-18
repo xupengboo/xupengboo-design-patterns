@@ -6,6 +6,7 @@ import com.xupengboo.draw.RedCircle;
 import com.xupengboo.shape.Circle;
 import com.xupengboo.shape.Shape;
 
+// 客户端代码
 public class App {
 
     public static void main( String[] args ) {
