@@ -25,25 +25,28 @@ mvn archetype:generate -DgroupId=com.xupengboo -DartifactId=xxx -DarchetypeArtif
 **结构型模式（Structural Patterns）**:
 1. 适配器模式（Adapter Pattern）
 2. 桥接模式（Bridge Pattern）
-3. 装饰器模式（Decorator Pattern）
+3. 过滤器模式（Filter Pattern）
 4. 组合模式（Composite Pattern）
-5. 外观模式（Facade Pattern）
-6. 享元模式（Flyweight Pattern）
-7. 代理模式（Proxy Pattern）
+5. 装饰器模式（Decorator Pattern）
+6. 外观模式（Facade Pattern）
+7. 享元模式（Flyweight Pattern）
+8. 代理模式（Proxy Pattern）
 
 **行为型模式（Behavioral Patterns）**:
-
-1. 策略模式（Strategy Pattern）
-2. 模板方法模式（Template Method Pattern）
-3. 观察者模式（Observer Pattern）
+1. 责任链模式（Chain of Responsibility Pattern）
+2. 命令模式（Command Pattern）
+3. 解释器模式（Interpreter Pattern）
 4. 迭代器模式（Iterator Pattern）
-5. 责任链模式（Chain of Responsibility Pattern）
-6. 命令模式（Command Pattern）
-7. 备忘录模式（Memento Pattern）
+5. 中介者模式（Mediator Pattern）
+6. 备忘录模式（Memento Pattern）
+7. 观察者模式（Observer Pattern）
 8. 状态模式（State Pattern）
-9. 访问者模式（Visitor Pattern）
-10. 中介者模式（Mediator Pattern）
-11. 解释器模式（Interpreter Pattern）
+9. 空对象模式
+10. 策略模式（Strategy Pattern）
+11. 模板方法模式（Template Method Pattern）
+12. 访问者模式（Visitor Pattern）
+
+
 
 # 1. 工厂模式
 
@@ -202,7 +205,7 @@ class MyClass {
 **桥接模式主要包含以下几个角色**：
 
 1. 抽象类（Abstraction）： 定义抽象部分的接口，并维护一个对实现部分的引用。通常包含一个桥接接口的实例。
-2. 扩展抽象类（RefinedAbstraction 扩展抽象类，实现抽象部分的具体功能。它通常通过调用桥接接口中的方法来完成工作。
+2. 扩展抽象类（RefinedAbstraction）：扩展抽象类，实现抽象部分的具体功能。它通常通过调用桥接接口中的方法来完成工作。
 3. 实现接口（Implementor）： 定义实现部分的接口，通常包含一组方法。这个接口与抽象部分的接口可以不一样，但是通过桥接接口进行连接。
 4. 具体实现类（ConcreteImplementor）： 实现实现部分的具体功能。具体实现类的方法将被扩展抽象类调用，完成实际的业务逻辑。
 
@@ -210,3 +213,4 @@ class MyClass {
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [桥接](https://github.com/xupengboo/design-patterns/tree/main/6.%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/src/main/java/com/xupengboo) | 将抽象部分与实现部分分离，使它们都可以独立的变化。举个例子：创建不同颜色的圆形，颜色就可以理解为抽象部分，圆形就是实现部分。 |
 
+# 7. 
