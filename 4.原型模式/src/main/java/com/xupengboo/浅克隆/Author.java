@@ -44,7 +44,7 @@ public class Author implements Cloneable{
     public void setCountry(String country) {
         this.country = country;
     }
-    
+
 }
 
 
