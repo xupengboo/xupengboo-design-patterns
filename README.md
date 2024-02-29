@@ -15,14 +15,19 @@ mvn archetype:generate -DgroupId=com.xupengboo -DartifactId=xxx -DarchetypeArtif
 **Java中有23种经典的设计模式，它们分为三大类：创建型模式、结构型模式和行为型模式。**
 
 **创建型模式（Creational Patterns）**:
-1. 工厂方法模式（Factory Method Pattern）
-2. 抽象工厂模式（Abstract Factory Pattern）
-3. 单例模式（Singleton Pattern）
+1. 单例模式（Singleton Pattern）
+2. 原型模式（Prototype Pattern）
+3. 工厂模式（Factory Pattern）
+   - 简单工厂模式（Simple Factory Pattern）
+   - 工厂方法模式（Factory Method Pattern）
+   - 抽象工厂模式（Abstract Factory Pattern）
 4. 建造者模式（Builder Pattern）
-5. 原型模式（Prototype Pattern）
 
 **结构型模式（Structural Patterns）**:
+
 1. 适配器模式（Adapter Pattern）
+   - 对象适配器模式（Object Adapter Pattern）
+   - 类适配器模式（Class Adapter Pattern）
 2. 桥接模式（Bridge Pattern）
 3. 过滤器模式（Filter Pattern）
 4. 组合模式（Composite Pattern）
@@ -40,7 +45,6 @@ mvn archetype:generate -DgroupId=com.xupengboo -DartifactId=xxx -DarchetypeArtif
 6. 备忘录模式（Memento Pattern）
 7. 观察者模式（Observer Pattern）
 8. 状态模式（State Pattern）
-9. 空对象模式
 10. 策略模式（Strategy Pattern）
 11. 模板方法模式（Template Method Pattern）
 12. 访问者模式（Visitor Pattern）
@@ -374,3 +378,15 @@ class MyClass {
 | -------------- | ------------------------------------------------ |
 | [解释器模式]() | 解释器解释语言中的句子，例如：编译器、四则运算。 |
 
+# 16. 迭代器模式
+
+官方定义：迭代器模式（Iterator Pattern）是 Java 和 .Net 编程环境中非常常用的设计模式。这种模式用于顺序访问集合对象的元素，不需要知道集合对象的底层表示。
+
+关键信息：**用于顺序访问集合对象的元素**，不需要知道集合对象的底层表示。
+
+**迭代器模式主要包含以下几个角色**：
+
+1. 迭代器（Iterator）： 定义了一个遍历集合的接口，通常是一个抽象类或者接口。迭代器类通常包含了一些遍历集合的方法，例如 `hasNext()`、`next()` 等。
+2. 具体迭代器（Concrete Iterator）： 实现了迭代器接口，是迭代器模式中的具体迭代器。具体迭代器类通常是一个具体的类，它包含了具体的遍历逻辑。
+3. 集合（Aggregate）： 定义了一个集合的接口，通常是一个抽象类或者接口。集合类通常包含了一些操作集合的方法，例如 `add()`、`remove()` 等。
+4. 具体集合（Concrete Aggregate）： 实现了集合接口，是迭代器模式中的具体集合。具体集合类通常是一个具体的类，它包含了具体的集合实现。
