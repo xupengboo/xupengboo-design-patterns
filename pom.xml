@@ -28,6 +28,7 @@
         <module>过滤器模式</module>
         <module>迭代器模式</module>
         <module>适配器模式</module>
+        <module>观察者模式</module>
     </modules>
 
 </project>
