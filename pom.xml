@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.xupengboo.design</groupId>
+    <artifactId>design-patterns</artifactId>
+    <version>0.0.1</version>
+    <name>design-patterns</name>
+    <description>聚合服务</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>中介者模式</module>
+        <module>享元模式</module>
+        <module>代理模式</module>
+        <module>单例模式</module>
+        <module>原型模式</module>
+        <module>命令模式</module>
+        <module>备忘录模式</module>
+        <module>外观模式</module>
+        <module>工厂模式</module>
+        <module>建造者模式</module>
+        <module>桥接模式</module>
+        <module>组合模式</module>
+        <module>装饰器模式</module>
+        <module>解释器模式</module>
+        <module>责任链模式</module>
+        <module>过滤器模式</module>
+        <module>迭代器模式</module>
+        <module>适配器模式</module>
+    </modules>
+
+</project>
