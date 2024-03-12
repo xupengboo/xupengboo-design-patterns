@@ -30,6 +30,8 @@
         <module>观察者模式</module>
         <module>状态模式</module>
         <module>策略模式</module>
-    </modules>
+      <module>template-pattern</module>
+    <module>visitor-pattern</module>
+  </modules>
 
 </project>
